@@ -52,7 +52,7 @@ flask run
 ## How to test the api
 You can test the API with PostMan and directly using curl command.
 ```bash
-curl --data-raw "{\"data\":\"aGVsbG8sIHdvcmxkIQ==\"}" --location --request POST 'http://localhost:5000/api/parse' --header 'Content-Type: application/json'
+curl --data-raw "{\"image\":\"aGVsbG8sIHdvcmxkIQ==\"}" --location --request POST 'http://localhost:5000/api/parse' --header 'Content-Type: application/json'
 ```
 
 ## How to integrate the ML part
@@ -66,7 +66,7 @@ url: /api/parse
 method: POST
 payload:
 {
-    data: "string"
+    "image": "string"
 }
 Response format
 {
